@@ -1,5 +1,5 @@
 // URL da API que está rodando localmente
-const API_URL = "http://localhost:3000/tasks";
+const API_URL = "https://lumi-backend-sqeh.onrender.com/tasks";
 
 // Seleciona os elementos do HTML
 const taskInput = document.getElementById("taskInput");
