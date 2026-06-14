@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi | Organize seu dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <h2 class="logo">🌙Lumi</h2>
+            <span class="badge">Projeto Cloud</span>
+        </nav>
+
+        <section class="hero-content">
+            <div class="hero-text">
+                <p class="subtitle">Organize sua rotina com praticidade</p>
+                <h1>Gerencie suas tarefas de forma simples e eficiente</h1>
+                <p class="description">
+                    Aplicação To-Do List com CRUD completo, API em Node.js e banco PostgreSQL em nuvem.
+                </p>
+            </div>
+
+            <div class="task-card">
+                <h2>Minha lista</h2>
+                <p class="card-description">Adicione, conclua e exclua suas tarefas.</p>
+
+                <div class="formulario">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="Digite uma nova tarefa..."
+                    >
+
+                    <button id="addButton">
+                        Adicionar
+                    </button>
+                </div>
+
+                <ul id="taskList"></ul>
+            </div>
+        </section>
+    </header>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

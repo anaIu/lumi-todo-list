@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi | Minhas tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-page">
+
+        <section class="task-card app-card">
+
+            <a href="home.html" class="back-button">
+                ← Voltar
+            </a>
+
+            <header class="app-header">
+                <h1 class="app-title">🌙 Lumi</h1>
+                <p class="card-description">Gerenciamento de tarefas</p>
+            </header>
+
+            <div class="formulario">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Digite uma nova tarefa..."
+                >
+
+                <button id="addButton">
+                    Adicionar
+                </button>
+            </div>
+
+            <section class="tasks-area">
+                <h3>Tarefas</h3>
+                <ul id="taskList"></ul>
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
