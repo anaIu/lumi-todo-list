@@ -190,9 +190,10 @@ app.put("/tasks/:id", async (req, res) => {
 });
 
 // Porta onde a API ficará disponível
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Inicia o servidor
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
