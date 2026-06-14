@@ -1,16 +1,18 @@
-// Importa a biblioteca PostgreSQL que instalei com npm install pg
+// Importa a biblioteca PostgreSQL
 const { Pool } = require("pg");
 
-// Lê as variáveis do arquivo .env
+// Lê o arquivo .env quando estiver rodando localmente
 require("dotenv").config();
 
-// Cria uma conexão com o banco PostgreSQL
+// Cria a conexão com o banco PostgreSQL
 const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
 
-    // Pega a string de conexão que coloquei no arquivo .env
-    connectionString: process.env.DATABASE_URL
-
+    // Necessário para conexão com Supabase no ambiente do Render
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
-// Exporta a conexão para que eu possa usar em outros arquivos
+// Exporta a conexão para usar no server.js
 module.exports = pool;
